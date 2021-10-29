@@ -10,7 +10,7 @@ void *fonc_thread(void *num)
 {
     int k;
     int locale=10;
-    for (k = 0; k < 3; k++)
+    for (k = 0; k < 10; k++)
     {
         locale++;
         globale++;
@@ -32,3 +32,6 @@ void main()
     sleep(1); /* pour eviter que la thread initiale ne fasse exit avant que les autres ne soient terminees, ce qui les termineraient */
     
 }
+
+
+// gcc -o variable variable.c -lpthread
