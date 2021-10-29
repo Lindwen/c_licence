@@ -32,6 +32,3 @@ void main()
     sleep(1); /* pour eviter que la thread initiale ne fasse exit avant que les autres ne soient terminees, ce qui les termineraient */
     
 }
-
-
-// gcc -o variable variable.c -lpthread
