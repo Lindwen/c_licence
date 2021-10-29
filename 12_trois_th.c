@@ -36,5 +36,3 @@ main()
     exit(0);
     
 }
-
-// gcc -o trois_th trois_th.c -lpthread
