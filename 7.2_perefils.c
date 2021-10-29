@@ -15,7 +15,7 @@ int main(void)
     {       /* processus père */
         printf("Le père: mon pid est %d, le pid de mon papa a moi est %d\n", getpid(), getpid());
         printf("\t\t fork a retourné au père la valeur %d\n", PID);
-        sleep(1);
+        //sleep(1);
     }
     else("Erreur dans fork !!!");
     return 0;
