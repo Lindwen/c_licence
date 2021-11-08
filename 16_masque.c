@@ -13,7 +13,7 @@ void main()
 
 	sleep(10);
 
-	printf("\nRetablisseent des signaux SIGINT et SINGQUIT\n");
+	printf("\nRetablissement des signaux SIGINT et SINGQUIT\n");
 	action.sa_handler = SIG_DFL;
         sigaction(SIGINT, &action, NULL);
         sigaction(SIGQUIT, &action, NULL);
