@@ -11,10 +11,10 @@ void main()
 	sigaction(SIGQUIT, &action, NULL);
 	printf("Signaux SIGINT et SIGQUIT ignores\n");
 
-	sleep(30);
+	sleep(10);
 
 	printf("\nRetablisseent des signaux SIGINT et SINGQUIT\n");
-	action.sa_handler = SIG_IGN;
+	action.sa_handler = SIG_DFL;
         sigaction(SIGINT, &action, NULL);
         sigaction(SIGQUIT, &action, NULL);
 
