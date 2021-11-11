@@ -10,7 +10,7 @@ int main(void)
 
     if (p > 0)
     {
-        printf("processus pèsre: %d-%d-%d\n", p, getpid(), getpid());
+        printf("processus père: %d-%d-%d\n", p, getpid(), getpid());
     }
 
     if (p == 0)
